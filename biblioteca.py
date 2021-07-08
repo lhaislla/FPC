@@ -51,7 +51,6 @@ class Biblioteca:
         else:
             ok = False
             mensagem = "O livro nao esta alugado"
-       
         return (ok, mensagem)
     def livroMaisAlugado(self):
         ok = True
@@ -119,7 +118,6 @@ while n != 0:
     entrada.pop(0)
     info_nomes.append(nome)
     lista_completa.append(nome)
-    lista_completa
     autor = entrada[0]
     lista_completa.append(autor)
     valor = biblioteca.livrosOrdenadosPeloNome(info_nomes)
@@ -128,8 +126,9 @@ while n != 0:
     chaves[livro_novo.nome] = livro_novo.codigo
     biblioteca.inserir(livro_novo)
     n-=1
-cont = 0   
+  
 # Tratamento da Saída:
+cont = 0 
 temp = []
 for ordena in valor:
     resultado = chaves.get(info_nomes[cont])
